@@ -3,7 +3,7 @@ const chalk = require('chalk');
 const authorize = require("./utils/authorize");
 const indexer = require("./utils/indexer");
 const { delay } = require("./utils/utils");
-const filePath = "links.txt";
+const filePath = "links_test.txt";
 const totalRows = "Total Rows: ";
 const timerCycle = 1000;
 
@@ -35,7 +35,6 @@ const gic = async () => {
     }
     await delay(timerCycle);
     updatedLinksPositions.push(index);
-    break; // delete later
   }
   for (const itm of updatedLinksPositions) {
     dataArray.splice(updatedLinksPositions, 1);

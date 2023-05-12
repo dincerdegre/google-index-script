@@ -1,7 +1,7 @@
 const { google } = require("googleapis");
 const chalk = require('chalk');
-// const key = require("../cred.json");
-const key = require("../service_account.json");
+const key = require("../cred.json");
+// const key = require("../service_account.json");
 
 const jwtClient = new google.auth.JWT(
   key.client_email,
